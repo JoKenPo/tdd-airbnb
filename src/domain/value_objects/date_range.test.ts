@@ -55,6 +55,6 @@ describe('DateRange Value Object', () => {
     const date = new Date('2024-12-20')
     expect(()=> {
       new DateRange(date,date)
-    }).toThrow('A data de término deve ser posterior a data de inìcio.')
+    }).toThrow('A data de inicio e término não podem ser iguais.')
   })
 })
